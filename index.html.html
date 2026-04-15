@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roots Flavor — Final Business Plan 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #160E04;
+    --brown: #3D2008;
+    --amber: #C47D0A;
+    --gold: #E8A020;
+    --straw: #F2E8D0;
+    --cream: #FDFBF6;
+    --green: #1E4D14;
+    --sage: #5A8050;
+    --red: #7A1010;
+    --orange: #A84800;
+    --muted: #7A6040;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.75;
+  }
+
+  /* COVER */
+  .cover {
+    background: var(--ink);
+    min-height: 100vh;
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(196,125,10,0.1) 0%, transparent 65%);
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: -100px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(30,77,20,0.12) 0%, transparent 65%);
+  }
+
+  .cover-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .cover-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+  }
+
+  .cover-tag {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(242,232,208,0.35);
+  }
+
+  .cover-body {
+    position: relative;
+    padding: 60px 0;
+  }
+
+  .cover-eyebrow {
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(44px, 8vw, 80px);
+    color: var(--straw);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 28px;
+  }
+
+  .cover h1 span { color: var(--gold); }
+
+  .cover-intro {
+    font-size: 16px;
+    color: rgba(242,232,208,0.5);
+    max-width: 460px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .cover-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    border-top: 1px solid rgba(242,232,208,0.1);
+    padding-top: 32px;
+    position: relative;
+  }
+
+  .cover-stat-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--gold);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .cover-stat-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(242,232,208,0.3);
+  }
+
+  /* SECTIONS */
+  .section {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 72px 48px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 46px);
+    color: var(--ink);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 28px;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    color: var(--brown);
+    margin: 40px 0 12px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 15px;
+    color: #2E1A08;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+
+  .sep {
+    border: none;
+    border-top: 1px solid rgba(61,32,8,0.1);
+    margin: 0;
+  }
+
+  /* CALLOUT */
+  .callout {
+    background: var(--ink);
+    padding: 28px 32px;
+    border-radius: 4px;
+    margin: 28px 0;
+    position: relative;
+  }
+
+  .callout::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--gold);
+    border-radius: 4px 0 0 4px;
+  }
+
+  .callout p {
+    color: rgba(242,232,208,0.75);
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .callout strong { color: var(--gold); font-style: normal; }
+
+  /* WARNING */
+  .warn {
+    background: #120404;
+    border-left: 3px solid #8B1A1A;
+    padding: 18px 24px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .warn p { color: #f0b0b0; margin: 0; font-size: 14px; }
+  .warn strong { color: #ff8888; }
+
+  /* GOOD */
+  .good {
+    background: #030f02;
+    border-left: 3px solid var(--sage);
+    padding: 18px 24px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .good p { color: #a8d0a0; margin: 0; font-size: 14px; }
+  .good strong { color: #c8f0b8; }
+
+  /* PRODUCT TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+
+  thead tr { background: var(--ink); }
+
+  th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(61,32,8,0.08);
+    color: #2E1A08;
+    font-weight: 300;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  tr.total td {
+    background: var(--straw);
+    font-weight: 600;
+    border-top: 2px solid var(--amber);
+    color: var(--ink);
+  }
+
+  td.green { color: var(--green); font-weight: 500; }
+  td.red { color: var(--red); font-weight: 500; }
+  td.muted { color: var(--muted); font-size: 12px; }
+
+  /* SCENARIO GRID */
+  .scenarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .sc {
+    border-radius: 6px;
+    padding: 28px 22px;
+    border: 1px solid transparent;
+  }
+
+  .sc-red { background: #fff5f5; border-color: #f5cccc; }
+  .sc-amber { background: #fffaf0; border-color: #f0dda0; }
+  .sc-green { background: #f2faf0; border-color: #b0d8a8; }
+
+  .sc-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  .sc-red .sc-label { color: var(--red); }
+  .sc-amber .sc-label { color: var(--orange); }
+  .sc-green .sc-label { color: var(--green); }
+
+  .sc-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .sc-red .sc-val { color: var(--red); }
+  .sc-amber .sc-val { color: var(--orange); }
+  .sc-green .sc-val { color: var(--green); }
+
+  .sc p {
+    font-size: 13px;
+    color: #5a4030;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  /* CHECKLIST */
+  .checklist {
+    margin: 24px 0;
+    display: grid;
+    gap: 0;
+  }
+
+  .check-week {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(61,32,8,0.08);
+  }
+
+  .check-week:last-child { border-bottom: none; }
+
+  .week-label {
+    padding-top: 2px;
+  }
+
+  .week-period {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--amber);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .week-sub {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .check-items ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .check-items ul li {
+    font-size: 14px;
+    color: #2E1A08;
+    padding: 5px 0 5px 22px;
+    position: relative;
+    font-weight: 300;
+    border-bottom: 1px dashed rgba(61,32,8,0.06);
+  }
+
+  .check-items ul li:last-child { border-bottom: none; }
+
+  .check-items ul li::before {
+    content: '□';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+    font-size: 14px;
+  }
+
+  .check-items ul li.urgent { color: var(--red); font-weight: 400; }
+  .check-items ul li.urgent::before { content: '□'; color: var(--red); }
+
+  .check-items ul li.note {
+    color: var(--muted);
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .check-items ul li.note::before { content: '→'; color: var(--muted); }
+
+  /* LOAN ROWS */
+  .loan-rows {
+    margin: 24px 0;
+    border: 1px solid rgba(61,32,8,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .loan-row {
+    display: grid;
+    grid-template-columns: 1fr 160px 100px;
+    gap: 16px;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(61,32,8,0.08);
+    align-items: center;
+  }
+
+  .loan-row:last-child { border-bottom: none; }
+
+  .loan-row.head {
+    background: var(--ink);
+    padding: 12px 20px;
+  }
+
+  .loan-row.head span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .loan-row.total-row {
+    background: var(--straw);
+    border-top: 2px solid var(--amber);
+  }
+
+  .loan-name { font-size: 14px; color: #2E1A08; font-weight: 400; }
+  .loan-name small { display: block; font-size: 12px; color: var(--muted); font-weight: 300; }
+  .loan-amt { font-size: 14px; color: var(--brown); font-weight: 500; text-align: right; }
+
+  .badge {
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .b-must { background: #fde0e0; color: var(--red); }
+  .b-should { background: #fef0d0; color: var(--orange); }
+  .b-buffer { background: #e0f0d8; color: var(--green); }
+
+  .loan-row.total-row .loan-name { font-weight: 600; font-size: 15px; }
+  .loan-row.total-row .loan-amt { font-weight: 700; font-size: 16px; color: var(--ink); }
+
+  /* TEAM */
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .team-card {
+    background: var(--straw);
+    border-radius: 6px;
+    padding: 28px 22px;
+  }
+
+  .team-role {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+
+  .team-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .team-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .team-card ul li {
+    font-size: 13px;
+    color: #4a2808;
+    padding: 3px 0 3px 14px;
+    position: relative;
+    font-weight: 300;
+  }
+
+  .team-card ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+    font-weight: 700;
+  }
+
+  .team-card .redirect {
+    margin-top: 12px;
+    padding: 10px 12px;
+    background: rgba(61,32,8,0.08);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--orange);
+    font-weight: 400;
+  }
+
+  /* RISKS */
+  .risks { margin: 24px 0; }
+
+  .risk {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(61,32,8,0.08);
+    align-items: start;
+  }
+
+  .risk:last-child { border-bottom: none; }
+
+  .risk-level {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 3px;
+  }
+
+  .rl-h { color: var(--red); }
+  .rl-m { color: var(--orange); }
+  .rl-l { color: var(--sage); }
+
+  .risk h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .risk p { font-size: 13px; color: #5a4020; margin: 0; }
+  .risk strong { color: var(--brown); }
+
+  /* DOLPA VISIT */
+  .visit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .visit-card {
+    background: white;
+    border: 1px solid rgba(61,32,8,0.1);
+    border-radius: 6px;
+    padding: 24px 20px;
+  }
+
+  .visit-card .vc-icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .visit-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .visit-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .visit-card ul li {
+    font-size: 13px;
+    color: #4a3018;
+    padding: 3px 0 3px 14px;
+    position: relative;
+    font-weight: 300;
+  }
+
+  .visit-card ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+    font-size: 11px;
+    top: 5px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    padding: 40px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--gold);
+  }
+
+  .footer-note {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(242,232,208,0.25);
+  }
+
+  @media(max-width:600px) {
+    .cover { padding: 40px 24px; }
+    .cover-footer { grid-template-columns: repeat(2,1fr); }
+    .section { padding: 56px 24px; }
+    .check-week { grid-template-columns: 1fr; gap: 8px; }
+    .loan-row { grid-template-columns: 1fr auto; }
+    .loan-row .badge { display: none; }
+    .risk { grid-template-columns: 60px 1fr; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-header">
+    <div class="cover-logo">Roots Flavor</div>
+    <div class="cover-tag">Final Business Plan · 2025</div>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-eyebrow">Built on real numbers</div>
+    <h1>The Plan That<br><span>Actually Works</span></h1>
+    <p class="cover-intro">Based on your actual margins, your real products, your team situation, and the 2–3 months you have before harvest season. No guesswork.</p>
+  </div>
+
+  <div class="cover-footer">
+    <div>
+      <div class="cover-stat-val">NPR 75K</div>
+      <div class="cover-stat-label">Profit in 4 Months</div>
+    </div>
+    <div>
+      <div class="cover-stat-val">40/kg</div>
+      <div class="cover-stat-label">Best Margin (Chino)</div>
+    </div>
+    <div>
+      <div class="cover-stat-val">2–3mo</div>
+      <div class="cover-stat-label">To Harvest Season</div>
+    </div>
+    <div>
+      <div class="cover-stat-val">15–20L</div>
+      <div class="cover-stat-label">Planned Investment</div>
+    </div>
+  </div>
+</div>
+
+<!-- REAL NUMBERS -->
+<div class="section">
+  <div class="eyebrow">01 — What You Actually Know</div>
+  <h2>Your Real Numbers</h2>
+
+  <p>After four months of trading, here is what is confirmed. Everything else — farmer prices, truck costs, Chino availability — must be confirmed during your Dolpa visit.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Your Buy Price</th>
+        <th>Rasilo Pays You</th>
+        <th>Margin/kg</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Chino (Foxtail Millet)</strong></td>
+        <td>NPR 85/kg</td>
+        <td>NPR 125/kg</td>
+        <td class="green">NPR 40/kg ✓</td>
+        <td>Limited qty from Dolpa</td>
+      </tr>
+      <tr>
+        <td><strong>Simi (Beans)</strong></td>
+        <td>NPR 215/kg</td>
+        <td>NPR 245/kg</td>
+        <td class="green">NPR 30/kg ✓</td>
+        <td>Good qty from Dolpa</td>
+      </tr>
+      <tr>
+        <td><strong>Kodo (from other regions)</strong></td>
+        <td>NPR 66/kg (farmer)</td>
+        <td>NPR 65/kg</td>
+        <td class="red">−NPR 1/kg ✗</td>
+        <td class="muted">Drop this. No margin.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warn">
+    <p><strong>Kodo from outside Dolpa is a loss-maker.</strong> Farmer price NPR 66, Rasilo pays NPR 65. Do not pursue this until either farmer prices drop significantly or Rasilo agrees to pay NPR 90+.</p>
+  </div>
+
+  <div class="good">
+    <p><strong>Chino is your best product.</strong> NPR 40/kg margin at only NPR 85 buy price. It's rare in Nepal — only Karnali and hilly areas produce it. Confirm maximum available quantity as your first priority in Dolpa.</p>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- TRUCK PLAN -->
+<div class="section">
+  <div class="eyebrow">02 — The Truck Strategy</div>
+  <h2>Full Truck Load — Real Profit Projections</h2>
+
+  <p>A full truck from Dolpa carries approximately 8,000–10,000 kg. Your plan to fill it completely rather than send a half-empty truck is financially correct — transport cost per kg drops dramatically at full load. Here is what the numbers look like across three realistic scenarios.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product Mix</th>
+        <th>Chino Qty</th>
+        <th>Simi Qty</th>
+        <th>Stock Cost</th>
+        <th>Revenue</th>
+        <th>Gross Profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Heavy Chino</strong></td>
+        <td>5,000 kg</td>
+        <td>4,000 kg</td>
+        <td>NPR 12,85,000</td>
+        <td>NPR 16,05,000</td>
+        <td class="green">NPR 3,20,000</td>
+      </tr>
+      <tr>
+        <td><strong>Balanced Mix</strong></td>
+        <td>3,000 kg</td>
+        <td>6,000 kg</td>
+        <td>NPR 15,45,000</td>
+        <td>NPR 18,45,000</td>
+        <td class="green">NPR 3,00,000</td>
+      </tr>
+      <tr>
+        <td><strong>Simi Heavy</strong> (if Chino limited)</td>
+        <td>1,500 kg</td>
+        <td>7,500 kg</td>
+        <td>NPR 17,50,000</td>
+        <td>NPR 20,25,000</td>
+        <td class="green">NPR 2,75,000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:13px; color: var(--muted);">*All figures before transport costs. Estimated truck transport Dolpa→KTM: NPR 1,00,000–1,50,000 (confirm this number in Dolpa).</p>
+
+  <h3>Net Profit After Transport</h3>
+
+  <div class="scenarios">
+    <div class="sc sc-red">
+      <div class="sc-label">Worst Case</div>
+      <div class="sc-val">NPR 1.25L</div>
+      <p>Simi-heavy load, high transport cost, slow sales over 6 months. Still profitable but tight on loan repayment.</p>
+    </div>
+    <div class="sc sc-amber">
+      <div class="sc-label">Realistic</div>
+      <div class="sc-val">NPR 1.75L</div>
+      <p>Balanced mix, standard transport cost, sold in 4–5 months with 3–4 buyers.</p>
+    </div>
+    <div class="sc sc-green">
+      <div class="sc-label">Best Case</div>
+      <div class="sc-val">NPR 2.2L</div>
+      <p>Chino-heavy load, 5+ buyers, sold within 3 months. Loan repayment very manageable.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p>At realistic scenario, <strong>one full truck load earns you NPR 1.75L profit</strong> — more than double your entire 4-month profit so far. But this only works if you sell it within 5–6 months. That requires more than just Rasilo. <strong>You need 3–4 buyers confirmed before you spend the loan money.</strong></p>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- LOAN BREAKDOWN -->
+<div class="section">
+  <div class="eyebrow">03 — The 15–20L Loan</div>
+  <h2>How To Spend It Without Sinking</h2>
+
+  <p>The loan is viable — but only if allocated carefully. Do not put the entire amount into stock. You need transport, storage, operations, and a safety buffer. Here is the recommended breakdown.</p>
+
+  <div class="loan-rows">
+    <div class="loan-row head">
+      <span>Category</span>
+      <span style="text-align:right">Amount (NPR)</span>
+      <span style="text-align:center">Priority</span>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Bulk Stock Purchase (Chino + Simi)
+        <small>Buy directly from farmers — this is where your margin jumps</small>
+      </div>
+      <div class="loan-amt">10,00,000–13,00,000</div>
+      <div><span class="badge b-must">Must</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Full Truck Transport (Dolpa → KTM)
+        <small>Get exact quote before finalising loan amount</small>
+      </div>
+      <div class="loan-amt">1,00,000–1,50,000</div>
+      <div><span class="badge b-must">Must</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Cousin Operations Fee (NPR 5/kg)
+        <small>On ~9,000 kg total load</small>
+      </div>
+      <div class="loan-amt">40,000–50,000</div>
+      <div><span class="badge b-must">Must</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Storage Setup (friend's flat)
+        <small>HDPE bags, pest control, shelving, moisture check</small>
+      </div>
+      <div class="loan-amt">25,000–40,000</div>
+      <div><span class="badge b-must">Must</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Your Dolpa Visit
+        <small>Travel, accommodation, farmer meetings</small>
+      </div>
+      <div class="loan-amt">20,000–35,000</div>
+      <div><span class="badge b-must">Must</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Branded Packaging
+        <small>Roots Flavor bags — charges premium, builds brand</small>
+      </div>
+      <div class="loan-amt">20,000–30,000</div>
+      <div><span class="badge b-should">Should</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Business Registration (PAN minimum)
+        <small>Needed for formal buyer trust and bank relationships</small>
+      </div>
+      <div class="loan-amt">10,000–15,000</div>
+      <div><span class="badge b-should">Should</span></div>
+    </div>
+    <div class="loan-row">
+      <div class="loan-name">Emergency Reserve
+        <small>Never touch unless crisis — spoilage, delayed payment, transport failure</small>
+      </div>
+      <div class="loan-amt">1,00,000–1,50,000</div>
+      <div><span class="badge b-buffer">Buffer</span></div>
+    </div>
+    <div class="loan-row total-row">
+      <div class="loan-name">Total Estimated Range</div>
+      <div class="loan-amt">NPR 13–17L</div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="warn">
+    <p><strong>Do not finalise the loan amount until you have the truck transport quote from Dolpa.</strong> That single number — which you can only get on the ground — determines whether you need NPR 13L or NPR 17L. Getting it wrong means either borrowing too much (unnecessary interest) or too little (cash crunch mid-operation).</p>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- RASILO STRATEGY -->
+<div class="section">
+  <div class="eyebrow">04 — Your Biggest Opportunity</div>
+  <h2>Rasilo Agriculture — You Are Underusing Them</h2>
+
+  <p>Rasilo buys 65+ products. You supply 2. They are already your client — the trust barrier is lower than with any new buyer. The fastest way to grow your revenue is not to find new clients, it is to supply more products to Rasilo.</p>
+
+  <div class="good">
+    <p><strong>Action this week:</strong> Visit Rasilo in person — not WhatsApp. Ask them directly: "Which of your 65 products are you struggling to source consistently or at good prices?" Then see if any of those come from hill regions you can access.</p>
+  </div>
+
+  <h3>How To Build The Relationship</h3>
+  <p>Right now it is purely transactional — they see you as a vendor. One face-to-face conversation where you show genuine interest in their business problems changes this. Bring a small sample of something new from Dolpa. Show them you are building something serious.</p>
+
+  <p>A client who trusts you personally is 10x harder to replace than one who just compares prices. This is your most important relationship in the business right now.</p>
+
+  <h3>Negotiating A Better Price</h3>
+  <p>Once you have 2–3 other buyers, come back to Rasilo and renegotiate. Right now they control the price because you need them. When you have options, you have leverage. Do not renegotiate until you have those other buyers lined up — but plan to do it within 6 months.</p>
+</div>
+
+<hr class="sep">
+
+<!-- TEAM -->
+<div class="section">
+  <div class="eyebrow">05 — Your Team</div>
+  <h2>Three People, Clear Roles</h2>
+
+  <div class="team">
+    <div class="team-card">
+      <div class="team-role">CEO & Sales — Kathmandu</div>
+      <h4>You</h4>
+      <ul>
+        <li>Client relationships (Rasilo + new buyers)</li>
+        <li>Logistics coordination KTM side</li>
+        <li>Loan management and finances</li>
+        <li>Visit Dolpa before harvest</li>
+        <li>Finalise cousin arrangement</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <div class="team-role">Supply Lead — Dolpa</div>
+      <h4>Cousin Brother</h4>
+      <ul>
+        <li>Direct farmer sourcing (new model)</li>
+        <li>Quality check before dispatch</li>
+        <li>Local labour management</li>
+        <li>Coordinate with truck driver</li>
+      </ul>
+      <div class="redirect">⚠️ Renegotiate his NPR 5/kg rate this week. Confirm commitment before season.</div>
+    </div>
+    <div class="team-card">
+      <div class="team-role">Growth & Finance — Australia</div>
+      <h4>Friend (Australia)</h4>
+      <ul>
+        <li>Stop looking for farmers — focus on buyers</li>
+        <li>Use Nepal contacts to find KTM agri businesses</li>
+        <li>Explore Nepali diaspora demand in Australia</li>
+        <li>Help structure loan and finances</li>
+      </ul>
+      <div class="redirect">↻ Redirect: Buyers in KTM are more urgent than new suppliers right now.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- DOLPA VISIT -->
+<div class="section">
+  <div class="eyebrow">06 — Most Important Meeting of The Year</div>
+  <h2>What To Do In Dolpa</h2>
+
+  <p>Your Dolpa visit in the next 2–3 months is not a casual trip. It is the foundation of your entire harvest season. Come with specific questions and leave with specific numbers.</p>
+
+  <div class="visit-grid">
+    <div class="visit-card">
+      <div class="vc-icon">👨‍🌾</div>
+      <h4>With Your Cousin</h4>
+      <ul>
+        <li>Agree NPR 5/kg formally — get WhatsApp confirmation</li>
+        <li>Ask: max kg of Chino available this harvest</li>
+        <li>Ask: max kg of Simi available this harvest</li>
+        <li>Ask: harvest timeline — exact month</li>
+        <li>Ask: can he handle 9,000 kg alone or needs help</li>
+      </ul>
+    </div>
+    <div class="visit-card">
+      <div class="vc-icon">🌾</div>
+      <h4>With Farmers Directly</h4>
+      <ul>
+        <li>Get direct farmer price for Chino per kg</li>
+        <li>Get direct farmer price for Simi per kg</li>
+        <li>Build 3–4 farmer contacts independent of cousin</li>
+        <li>Ask about payment terms — advance or on delivery</li>
+        <li>This protects you if cousin situation changes</li>
+      </ul>
+    </div>
+    <div class="visit-card">
+      <div class="vc-icon">🚛</div>
+      <h4>Truck & Logistics</h4>
+      <ul>
+        <li>Get 2–3 quotes for full truck Dolpa → KTM</li>
+        <li>Ask about road conditions during harvest season</li>
+        <li>Confirm truck capacity in kg</li>
+        <li>Ask locals which transport companies are reliable</li>
+        <li>This number finalises your loan amount</li>
+      </ul>
+    </div>
+    <div class="visit-card">
+      <div class="vc-icon">📦</div>
+      <h4>Product Intel</h4>
+      <ul>
+        <li>Confirm which type of Chino Rasilo actually wants</li>
+        <li>Check quality of this season's expected crop</li>
+        <li>Ask if any other products available in quantity</li>
+        <li>Note any other traders competing for same products</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- PRE-HARVEST CHECKLIST -->
+<div class="section">
+  <div class="eyebrow">07 — Action Plan</div>
+  <h2>Next 10 Weeks — Your Checklist</h2>
+
+  <div class="checklist">
+    <div class="check-week">
+      <div class="week-label">
+        <span class="week-period">This Week</span>
+        <span class="week-sub">Most urgent</span>
+      </div>
+      <div class="check-items">
+        <ul>
+          <li class="urgent">Call cousin — have the rate conversation, get commitment</li>
+          <li class="urgent">Visit Rasilo in person — ask about their 65 product needs</li>
+          <li>Brief Australia friend — redirect to finding KTM buyers not farmers</li>
+          <li>Make list of 10 target agri businesses in Kathmandu to approach</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="check-week">
+      <div class="week-label">
+        <span class="week-period">Weeks 2–3</span>
+        <span class="week-sub">Build demand</span>
+      </div>
+      <div class="check-items">
+        <ul>
+          <li class="urgent">Approach 10 target buyers — visits, calls, WhatsApp. Goal: 2–3 interested</li>
+          <li>Inspect friend's flat — moisture, pests, capacity for 9,000 kg</li>
+          <li>Register business (PAN at minimum)</li>
+          <li class="note">Do not finalise loan until at least 2 buyers are committed</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="check-week">
+      <div class="week-label">
+        <span class="week-period">Weeks 4–6</span>
+        <span class="week-sub">Prepare trip</span>
+      </div>
+      <div class="check-items">
+        <ul>
+          <li>Plan and book Dolpa visit</li>
+          <li>Prepare list of farmer contacts to meet through cousin</li>
+          <li>Order storage materials (HDPE bags, pest control) — NPR 20–30K</li>
+          <li>Continue buyer outreach — aim for 3 committed before trip</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="check-week">
+      <div class="week-label">
+        <span class="week-period">Weeks 7–9</span>
+        <span class="week-sub">Dolpa visit</span>
+      </div>
+      <div class="check-items">
+        <ul>
+          <li class="urgent">Meet cousin — finalise quantities, rates, timeline</li>
+          <li class="urgent">Meet farmers directly — get prices and build contacts</li>
+          <li class="urgent">Get truck transport quotes — this number finalises your loan</li>
+          <li>Confirm product quality and harvest timing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="check-week">
+      <div class="week-label">
+        <span class="week-period">Week 10</span>
+        <span class="week-sub">Commit</span>
+      </div>
+      <div class="check-items">
+        <ul>
+          <li>Finalise loan amount based on real truck quote + stock cost</li>
+          <li>Confirm buyers and expected order volumes</li>
+          <li>Set harvest pickup date with cousin</li>
+          <li>Order branded packaging</li>
+          <li class="note">You are now ready for harvest season</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- RISKS -->
+<div class="section">
+  <div class="eyebrow">08 — Risk Management</div>
+  <h2>What Could Go Wrong & How To Handle It</h2>
+
+  <div class="risks">
+    <div class="risk">
+      <div class="risk-level rl-h">High</div>
+      <div>
+        <h5>Cousin leaves before harvest</h5>
+        <p>Your entire supply chain collapses. <strong>Fix:</strong> Have the rate conversation this week. Also build 3–4 direct farmer contacts during your Dolpa visit so you are not 100% dependent on one person.</p>
+      </div>
+    </div>
+    <div class="risk">
+      <div class="risk-level rl-h">High</div>
+      <div>
+        <h5>Only Rasilo buys — stock takes 8+ months to sell</h5>
+        <p>Loan repayments start before you recover your investment. <strong>Fix:</strong> Get 2–3 buyers committed before spending loan money on stock. Non-negotiable.</p>
+      </div>
+    </div>
+    <div class="risk">
+      <div class="risk-level rl-h">High</div>
+      <div>
+        <h5>Truck unavailable or too expensive during harvest season</h5>
+        <p>Everyone wants trucks during harvest. You may compete for availability. <strong>Fix:</strong> Book and deposit with a transporter during your Dolpa visit — months before harvest.</p>
+      </div>
+    </div>
+    <div class="risk">
+      <div class="risk-level rl-m">Medium</div>
+      <div>
+        <h5>Stock damaged in storage (mold, pests)</h5>
+        <p>Grains stored wrongly in Kathmandu humidity = total loss on that stock. <strong>Fix:</strong> HDPE bags, proper ventilation, pest control before first delivery arrives. Spend NPR 25–30K on this — it protects lakhs of stock.</p>
+      </div>
+    </div>
+    <div class="risk">
+      <div class="risk-level rl-m">Medium</div>
+      <div>
+        <h5>Cash flow gap — paying farmers before receiving buyer payment</h5>
+        <p>You pay upfront in Dolpa, but Rasilo may pay 30–60 days later. <strong>Fix:</strong> Negotiate 30–50% advance payment from buyers on large orders. Keep emergency reserve untouched for this gap.</p>
+      </div>
+    </div>
+    <div class="risk">
+      <div class="risk-level rl-l">Low</div>
+      <div>
+        <h5>Rasilo reduces orders or switches supplier</h5>
+        <p>Purely transactional relationship means no loyalty. <strong>Fix:</strong> Build personal relationship now. Have backup buyers lined up before harvest so you are never dependent on one client.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- BOTTOM LINE -->
+<div class="section">
+  <div class="eyebrow">09 — The Bottom Line</div>
+  <h2>What This Business Can Become</h2>
+
+  <p>You have built something real in 4 months with very little. NPR 75,000 profit from a standing start, one solid client, a trusted cousin in Dolpa, and a friend willing to invest from Australia. That is more than most people manage.</p>
+
+  <p>The truck strategy is sound. Buying in bulk during harvest to sell in off-season is exactly how successful agri traders in Nepal operate. Your instinct is right.</p>
+
+  <p>But the business lives or dies on two things in the next 10 weeks: <strong>keeping your cousin</strong> and <strong>finding more buyers.</strong> Everything else — the loan, the truck, the storage — follows from those two things being sorted.</p>
+
+  <div class="callout">
+    <p>If you secure 3–4 buyers and fill that truck with Chino-heavy stock, a realistic Year 1 target is <strong>NPR 6–8L turnover with NPR 1.5–2L net profit</strong> — after loan repayment. That is a real, sustainable business. And it is within reach.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Roots Flavor</div>
+  <div class="footer-note">Confidential · Nepal · 2025</div>
+</footer>
+
+</body>
+</html>
