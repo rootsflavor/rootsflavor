@@ -514,25 +514,25 @@
       <p class="np-flavor"><span class="en-el">We respond within 24 hours.</span><span class="np-el">हामी २४ घण्टाभित्र जवाफ दिन्छौं।</span></p>
     </div>
     <div class="contact-form rev d2">
+      <form action="https://formspree.io/f/mnjljgqr" method="POST">
       <div class="form-row">
         <div class="fgrp">
           <label><span class="en-el">Your Name</span><span class="np-el">तपाईंको नाम</span></label>
-          <input type="text" placeholder="Full name / पूरा नाम" id="fName">
+          <input type="text" name="full_name" placeholder="Full name / पूरा नाम" id="fName">
         </div>
         <div class="fgrp">
           <label><span class="en-el">Business Name</span><span class="np-el">व्यवसायको नाम</span></label>
-          <input type="text" placeholder="Company name / कम्पनीको नाम" id="fBiz">
+          <input type="text" name="business_name" placeholder="Company name / कम्पनीको नाम" id="fBiz">
         </div>
       </div>
-<form action="https://formspree.io/f/mnjljgqr" method="POST">
       <div class="form-row">
         <div class="fgrp">
           <label><span class="en-el">Phone / WhatsApp</span><span class="np-el">फोन / व्हाट्सएप</span></label>
-          <input type="tel" placeholder="+977 98XXXXXXXX" id="fPhone">
+          <input type="tel" name="phone" placeholder="+977 98XXXXXXXX" id="fPhone">
         </div>
         <div class="fgrp">
           <label><span class="en-el">Product Interest</span><span class="np-el">उत्पादनमा चासो</span></label>
-          <select id="fProduct">
+          <select id="fProduct" name="product_interest">
             <option value="">Select / छान्नुहोस्</option>
             <option>Chino (Foxtail Millet) / चिनो</option>
             <option>Simi (Beans) / सिमी</option>
@@ -543,9 +543,9 @@
       </div>
       <div class="fgrp">
         <label><span class="en-el">Message</span><span class="np-el">सन्देश</span></label>
-        <textarea id="fMsg" placeholder="Tell us about your requirements — quantity, frequency, delivery... / तपाईंको आवश्यकताबारे बताउनुहोस्"></textarea>
+        <textarea id="fMsg" name="message" placeholder="Tell us about your requirements..."></textarea>
       </div>
-      <button class="form-btn" onclick="submitForm()">
+      <button class="form-btn" type="submit">
         <span class="en-el">Send Enquiry →</span><span class="np-el">जिज्ञासा पठाउनुहोस् →</span>
       </button>
       <div class="success" id="successMsg">
