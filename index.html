@@ -171,6 +171,12 @@
   .prod-body .prod-np { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: var(--sage); font-style: italic; margin-bottom: 10px; }
   .prod-body p { font-size: 13px; color: #5a3a18; font-weight: 300; line-height: 1.7; }
   .prod-badge { display: inline-block; margin-top: 12px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; background: rgba(74,112,64,0.09); color: var(--fern); font-weight: 500; }
+  .prod-slider-wrap { position: relative; }
+.prod-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; background: var(--wheat); border: none; color: var(--forest); width: 44px; height: 44px; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(28,46,26,0.18); transition: all 0.3s; line-height: 1; }
+.prod-arrow:hover { background: var(--straw); transform: translateY(-50%) scale(1.08); }
+.prod-arrow.prev { left: -22px; }
+.prod-arrow.next { right: -22px; }
+.prod-arrow:disabled { opacity: 0.25; cursor: default; transform: translateY(-50%) scale(1); }
 
   /* WHY */
   .why-sec { background: var(--cream); border-top: 1px solid rgba(74,112,64,0.09); border-bottom: 1px solid rgba(74,112,64,0.09); }
@@ -410,7 +416,7 @@
         <p class="step-np"><span class="en-el">To your business</span><span class="np-el">तपाईंको व्यवसायमा</span></p>
         <p><span class="en-el">Delivered to your agri business across Kathmandu on agreed schedules — reliable supply you can plan around.</span><span class="np-el">सहमत तालिकामा काठमाडौंभर तपाईंको व्यवसायमा डेलिभरी।</span></p>
       </div>
-    </div>
+    </div><!-- end prod-slider-wrap -->
   </div>
 </section>
 
@@ -428,7 +434,10 @@
         <p class="body-p np-flavor"><span class="en-el">Available for bulk B2B orders. Contact us for pricing and availability.</span><span class="np-el">थोक B2B अर्डरका लागि उपलब्ध। सम्पर्क गर्नुहोस्।</span></p>
       </div>
     </div>
-    <div class="prod-grid">
+    <div class="prod-slider-wrap">
+  <button class="prod-arrow prev" id="prodPrev" onclick="slideProds(-1)" aria-label="Previous">&#8592;</button>
+  <button class="prod-arrow next" id="prodNext" onclick="slideProds(1)" aria-label="Next">&#8594;</button>
+    <div class="prod-grid" id="prodGrid">
       <div class="prod-card rev d1">
         <div class="prod-img" style="background:linear-gradient(135deg,#e6efe2,#cddfc5);overflow:hidden;"><img src="chino.jpg" alt="Chino Foxtail Millet" style="width:100%;height:100%;object-fit:cover;opacity:0.88;"></div>
         <div class="prod-body">
