@@ -677,6 +677,22 @@
   document.querySelectorAll('.rev').forEach(r => obs.observe(r));
 
   // FORM
+  // PRODUCT SLIDER ARROWS
+function slideProds(dir) {
+  const grid = document.getElementById('prodGrid');
+  const cardWidth = grid.querySelector('.prod-card').offsetWidth + 18;
+  grid.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+}
+(function() {
+  const grid = document.getElementById('prodGrid');
+  if (!grid) return;
+  function updateArrows() {
+    document.getElementById('prodPrev').disabled = grid.scrollLeft <= 4;
+    document.getElementById('prodNext').disabled = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 4;
+  }
+  grid.addEventListener('scroll', updateArrows);
+  updateArrows();
+})();
   function submitForm() {
     const n = document.getElementById('fName').value;
     const b = document.getElementById('fBiz').value;
